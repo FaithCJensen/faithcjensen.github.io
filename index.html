@@ -2,32 +2,103 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Your Name — Science writer & astronomer-in-training</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Your Name — Astronomer & Science Writer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="description" content="Cute pastel astronomy-themed personal website.">
 </head>
-<body style="background:#0b0f2e;color:#e0e0e0;font-family:sans-serif;margin:0;padding:2rem;">
-  <h1 style="color:#ff6f3c;">Your Name</h1>
-  <p>Science writer · Astronomy graduate student · Explorer of worlds</p>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">Your Name 🌙</h1>
+      <p class="tagline">Astronomer Barbie-in-training ✨ Science writer & planetary adventurer</p>
+      <nav class="site-nav">
+        <a href="#about">Meet Me 🌟</a>
+        <a href="#research">Planet-Hunting 🔭</a>
+        <a href="#writing">Cosmic Stories ✨</a>
+        <a href="#blog">Starry Thoughts 💫</a>
+        <a href="#contact">Contact 🚀</a>
+      </nav>
+    </div>
+  </header>
 
-  <h2>About</h2>
-  <p>Write a short bio here. Mention your research interests, passions, and goals.</p>
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Exploring the cosmos with curiosity & style!</h2>
+          <p class="lead">Science writing, exoplanet research, and all things space in pastel perfection.</p>
+        </div>
+        <div class="hero-photo">
+          <img src="assets/profile.jpg" alt="Portrait of Your Name">
+        </div>
+      </div>
+    </section>
 
-  <h2>Research</h2>
-  <ul>
-    <li>Exoplanet radial velocity simulations</li>
-    <li>Thermal mapping of glaciers with drones</li>
-  </ul>
+    <section id="about" class="panel">
+      <div class="container">
+        <h3>Meet Me 🌙</h3>
+        <p>Hello! I’m [Your Name], a science writer and aspiring astronomer. I love exoplanets, thermal mapping, and turning cosmic data into captivating stories.</p>
+        <p><strong>Skills:</strong> Astronomy research, radial velocity analysis, science communication, writing, design.</p>
+      </div>
+    </section>
 
-  <h2>Writing</h2>
-  <p>Link to your science writing samples here.</p>
+    <section id="research" class="panel alt">
+      <div class="container">
+        <h3>Planet-Hunting 🔭</h3>
+        <div class="cards">
+          <article class="card">
+            <img src="assets/project1.jpg" alt="Thermal mapping project">
+            <h4>Thermal Mapping with Drones</h4>
+            <p>Mapping glaciers & permafrost with drones to study climate impact.</p>
+          </article>
+          <article class="card">
+            <img src="assets/project2.jpg" alt="Exoplanet RV data">
+            <h4>Exoplanet Radial Velocity Analysis</h4>
+            <p>Simulated injection into HARPS-N seasonal data using quasi-periodic GP fits.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:you@example.com" style="color:#ff6f3c;">you@example.com</a></p>
+    <section id="writing" class="panel">
+      <div class="container">
+        <h3>Cosmic Stories ✨</h3>
+        <ul class="posts-list">
+          <li><a href="#">Feature: Voyager & the Golden Record 🌌</a></li>
+          <li><a href="#">Explainer: Disentangling Stellar Activity from Planet Signals</a></li>
+        </ul>
+      </div>
+    </section>
 
-  <footer style="margin-top:2rem;font-size:0.8rem;color:#9bb0c9;">
-    © <span id="year"></span> Your Name — observing & writing under the stars.
+    <section id="blog" class="panel alt">
+      <div class="container">
+        <h3>Starry Thoughts 💫</h3>
+        <p>Short blog posts or updates about space research, science writing, and adventures under the stars.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="panel">
+      <div class="container">
+        <h3>Contact 🚀</h3>
+        <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+        <p>Links: <a href="https://github.com/yourusername">GitHub</a> · <a href="#">LinkedIn</a> · <a href="#">ORCID</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name — observing & writing under pastel stars.</p>
+    </div>
   </footer>
+
   <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
