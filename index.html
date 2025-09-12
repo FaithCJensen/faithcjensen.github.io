@@ -1,103 +1,165 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Your Name — Astronomer & Science Writer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-  <meta name="description" content="Professional astronomy-themed personal website with subtle playful touches.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name — Astronomy Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+/* -------- Basic Reset -------- */
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Nunito',sans-serif;background:#0b0f2e;color:#e0e0e0;line-height:1.6;}
+
+/* -------- Container -------- */
+.container{width:calc(100% - 2rem);max-width:1100px;margin:0 auto;padding:2rem 0;}
+
+/* -------- Header -------- */
+.site-header{text-align:center;padding:2rem 0;}
+.site-title{font-family:'Orbitron',sans-serif;font-size:2.5rem;color:#c9a0dc;}
+.tagline{color:#a0a0a0;margin-top:0.5rem;font-size:1rem;}
+.site-nav{margin-top:1rem;}
+.site-nav a{margin:0 0.5rem;font-weight:600;color:#ff6f3c;text-decoration:none;}
+.site-nav a:hover{color:#c9a0dc;}
+
+/* -------- Hero -------- */
+.hero{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;padding:2rem 0;background:url('https://i.imgur.com/9o6fX2f.png') center/cover no-repeat;}
+.hero-inner{display:flex;flex-wrap:wrap;gap:2rem;align-items:center;background:rgba(0,0,0,0.4);padding:1rem;border-radius:12px;}
+.hero-text{flex:1;min-width:250px;text-align:center;}
+.hero-text h2{font-family:'Orbitron',sans-serif;color:#ff6f3c;}
+.hero-text p{color:#a0a0a0;margin-top:0.5rem;}
+.hero-photo img{width:180px;height:180px;border-radius:50%;border:2px solid #c9a0dc;object-fit:cover;}
+
+/* -------- Panels -------- */
+.panel{padding:2rem 0;text-align:center;}
+.panel.alt{background:rgba(255,255,255,0.07);border-radius:12px;}
+h3{font-family:'Orbitron',sans-serif;color:#c9a0dc;margin-bottom:1rem;display:flex;align-items:center;justify-content:center;}
+h3 svg{margin-left:0.5rem;width:20px;height:20px;}
+
+/* -------- Cards -------- */
+.cards{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;}
+.card{background:rgba(255,255,255,0.08);padding:1rem;border-radius:12px;flex:1 1 250px;min-width:220px;transition:transform 0.2s, box-shadow 0.2s;}
+.card img{width:100%;border-radius:12px;margin-bottom:0.5rem;}
+.card:hover{transform:translateY(-5px);box-shadow:0 10px 20px rgba(0,0,0,0.2);}
+
+/* -------- Post List -------- */
+.posts-list{list-style:none;padding-left:0;}
+.posts-list li{margin:0.6rem 0;}
+.posts-list a{color:#ff6f3c;}
+.posts-list a:hover{color:#c9a0dc;}
+
+/* -------- Footer -------- */
+.site-footer{padding:1.5rem 0;text-align:center;color:#a0a0a0;font-size:0.9rem;}
+
+/* -------- Responsive -------- */
+@media (max-width:900px){
+  .hero-inner{flex-direction:column;}
+  .hero-photo img{width:140px;height:140px;}
+}
+</style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="site-title">Your Name 🌙</h1>
-      <p class="tagline">Science writer & aspiring astronomer — exploring the cosmos professionally with style.</p>
-      <nav class="site-nav">
-        <a href="#about">About Me 🌟</a>
-        <a href="#research">Planet-Hunting 🔭</a>
-        <a href="#writing">Cosmic Stories ✨</a>
-        <a href="#blog">Starry Thoughts 💫</a>
-        <a href="#contact">Contact 🚀</a>
-      </nav>
+<header class="site-header">
+  <div class="container">
+    <h1 class="site-title">Your Name</h1>
+    <p class="tagline">Science writer & aspiring astronomer — exploring the cosmos professionally.</p>
+    <nav class="site-nav">
+      <a href="#about">About Me</a>
+      <a href="#research">Research</a>
+      <a href="#writing">Writing</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="hero" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h2>Professional Astronomy, Subtle Personality</h2>
+        <p>Research, writing, and cosmic exploration with a touch of flair.</p>
+      </div>
+      <div class="hero-photo">
+        <img src="assets/profile.jpg" alt="Your portrait">
+      </div>
     </div>
-  </header>
+  </section>
 
-  <main>
-    <section id="hero" class="hero">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <h2>Professional astronomy with a playful touch</h2>
-          <p class="lead">Research, writing, and cosmic exploration with subtle style.</p>
-        </div>
-        <div class="hero-photo">
-          <img src="assets/profile.jpg" alt="Portrait of Your Name">
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="panel">
-      <div class="container">
-        <h3>About Me 🌙</h3>
-        <p>Hi! I’m [Your Name], a science writer and aspiring astronomer. I focus on exoplanet research, drone-based environmental mapping, and communicating complex science clearly.</p>
-        <p><strong>Skills:</strong> Exoplanet analysis, science communication, research writing, data visualization.</p>
-      </div>
-    </section>
-
-    <section id="research" class="panel alt">
-      <div class="container">
-        <h3>Planet-Hunting 🔭</h3>
-        <div class="cards">
-          <article class="card">
-            <img src="assets/project1.jpg" alt="Thermal mapping project">
-            <h4>Thermal Mapping with Drones</h4>
-            <p>Monitoring glaciers and permafrost to study climate change impacts.</p>
-          </article>
-          <article class="card">
-            <img src="assets/project2.jpg" alt="Exoplanet RV data">
-            <h4>Exoplanet Radial Velocity Analysis</h4>
-            <p>Simulated HARPS-N seasonal data with quasi-periodic GP fits to recover exoplanet signals.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="writing" class="panel">
-      <div class="container">
-        <h3>Cosmic Stories ✨</h3>
-        <ul class="posts-list">
-          <li><a href="#">Voyager & the Golden Record — Communicating Humanity</a></li>
-          <li><a href="#">Disentangling Stellar Activity from Planet Signals</a></li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="blog" class="panel alt">
-      <div class="container">
-        <h3>Starry Thoughts 💫</h3>
-        <p>Short reflections and updates on exoplanets, astronomy research, and science writing adventures.</p>
-      </div>
-    </section>
-
-    <section id="contact" class="panel">
-      <div class="container">
-        <h3>Contact 🚀</h3>
-        <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-        <p>Links: <a href="https://github.com/yourusername">GitHub</a> · <a href="#">LinkedIn</a> · <a href="#">ORCID</a></p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
+  <section id="about" class="panel">
     <div class="container">
-      <p>© <span id="year"></span> Your Name — exploring the cosmos professionally with style.</p>
+      <h3>About Me
+        <!-- Small subtle planet icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#c9a0dc" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+      </h3>
+      <p>Hello! I’m [Your Name], a science writer and astronomer. I focus on exoplanet research, environmental mapping, and clear science communication.</p>
+      <p><strong>Skills:</strong> Exoplanet analysis, science writing, data visualization.</p>
     </div>
-  </footer>
+  </section>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <section id="research" class="panel alt">
+    <div class="container">
+      <h3>Research
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#c9a0dc" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+      </h3>
+      <div class="cards">
+        <article class="card">
+          <img src="assets/project1.jpg" alt="Thermal mapping project">
+          <h4>Thermal Mapping with Drones</h4>
+          <p>Monitoring glaciers & permafrost to study climate change impacts.</p>
+        </article>
+        <article class="card">
+          <img src="assets/project2.jpg" alt="Exoplanet RV data">
+          <h4>Exoplanet Radial Velocity Analysis</h4>
+          <p>Simulated HARPS-N seasonal data with quasi-periodic GP fits to recover exoplanet signals.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="writing" class="panel">
+    <div class="container">
+      <h3>Writing
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#c9a0dc" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+      </h3>
+      <ul class="posts-list">
+        <li><a href="#">Voyager & the Golden Record — Communicating Humanity</a></li>
+        <li><a href="#">Disentangling Stellar Activity from Planet Signals</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="blog" class="panel alt">
+    <div class="container">
+      <h3>Blog
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#c9a0dc" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+      </h3>
+      <p>Short reflections and updates on exoplanets, astronomy research, and science writing adventures.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="panel">
+    <div class="container">
+      <h3>Contact
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#c9a0dc" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+      </h3>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+      <p>Links: <a href="https://github.com/yourusername">GitHub</a> · <a href="#">LinkedIn</a> · <a href="#">ORCID</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> Your Name — professional astronomy with subtle personality.</p>
+  </div>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
 </body>
-</html>
+</
+
 </body>
 </html>
