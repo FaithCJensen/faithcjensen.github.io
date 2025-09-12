@@ -145,118 +145,6 @@ h3 svg { margin-left: 0.5rem; width: 20px; height: 20px; }
       <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
       <p>Links: <a href="https://github.com/yourusername">GitHub</a> · <a href="#">LinkedIn</a> · <a href="#">ORCID</a></p>
     </div>
-  </
-
-/* -------- Cards -------- */
-.cards{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;}
-.card{background:rgba(255,255,255,0.08);padding:1rem;border-radius:12px;flex:1 1 250px;min-width:220px;transition:transform 0.2s, box-shadow 0.2s;}
-.card img{width:100%;border-radius:12px;margin-bottom:0.5rem;}
-.card:hover{transform:translateY(-5px);box-shadow:0 10px 20px rgba(0,0,0,0.2);}
-
-/* -------- Post List -------- */
-.posts-list{list-style:none;padding-left:0;}
-.posts-list li{margin:0.6rem 0;}
-.posts-list a{color:#ff6f3c;}
-.posts-list a:hover{color:#c9a0dc;}
-
-/* -------- Footer -------- */
-.site-footer{padding:1.5rem 0;text-align:center;color:#a0a0a0;font-size:0.9rem;}
-
-/* -------- Responsive -------- */
-@media (max-width:900px){
-  .hero-inner{flex-direction:column;}
-  .hero-photo img{width:140px;height:140px;}
-}
-</style>
-</head>
-<body>
-<header class="site-header">
-  <div class="container">
-    <h1 class="site-title">Your Name</h1>
-    <p class="tagline">Science writer & aspiring astronomer — exploring the cosmos professionally.</p>
-    <nav class="site-nav">
-      <a href="#about">About Me</a>
-      <a href="#research">Research</a>
-      <a href="#writing">Writing</a>
-      <a href="#blog">Blog</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-  <section id="hero" class="hero">
-    <div class="container hero-inner">
-      <div class="hero-text">
-        <h2>Professional Astronomy, Subtle Personality</h2>
-        <p>Research, writing, and cosmic exploration with a touch of flair.</p>
-      </div>
-      <div class="hero-photo">
-        <img src="assets/profile.jpg" alt="Your portrait">
-      </div>
-    </div>
-  </section>
-
-  <section id="about" class="panel">
-    <div class="container">
-      <h3>About Me
-        <!-- Small subtle planet icon -->
-        <svg xmlns="http://www.w3.org/2000/svg" fill="#c9a0dc" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
-      </h3>
-      <p>Hello! I’m [Your Name], a science writer and astronomer. I focus on exoplanet research, environmental mapping, and clear science communication.</p>
-      <p><strong>Skills:</strong> Exoplanet analysis, science writing, data visualization.</p>
-    </div>
-  </section>
-
-  <section id="research" class="panel alt">
-    <div class="container">
-      <h3>Research
-        <svg xmlns="http://www.w3.org/2000/svg" fill="#c9a0dc" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
-      </h3>
-      <div class="cards">
-        <article class="card">
-          <img src="assets/project1.jpg" alt="Thermal mapping project">
-          <h4>Thermal Mapping with Drones</h4>
-          <p>Monitoring glaciers & permafrost to study climate change impacts.</p>
-        </article>
-        <article class="card">
-          <img src="assets/project2.jpg" alt="Exoplanet RV data">
-          <h4>Exoplanet Radial Velocity Analysis</h4>
-          <p>Simulated HARPS-N seasonal data with quasi-periodic GP fits to recover exoplanet signals.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="writing" class="panel">
-    <div class="container">
-      <h3>Writing
-        <svg xmlns="http://www.w3.org/2000/svg" fill="#c9a0dc" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
-      </h3>
-      <ul class="posts-list">
-        <li><a href="#">Voyager & the Golden Record — Communicating Humanity</a></li>
-        <li><a href="#">Disentangling Stellar Activity from Planet Signals</a></li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="blog" class="panel alt">
-    <div class="container">
-      <h3>Blog
-        <svg xmlns="http://www.w3.org/2000/svg" fill="#c9a0dc" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
-      </h3>
-      <p>Short reflections and updates on exoplanets, astronomy research, and science writing adventures.</p>
-    </div>
-  </section>
-
-  <section id="contact" class="panel">
-    <div class="container">
-      <h3>Contact
-        <svg xmlns="http://www.w3.org/2000/svg" fill="#c9a0dc" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
-      </h3>
-      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-      <p>Links: <a href="https://github.com/yourusername">GitHub</a> · <a href="#">LinkedIn</a> · <a href="#">ORCID</a></p>
-    </div>
   </section>
 </main>
 
@@ -269,9 +157,6 @@ h3 svg { margin-left: 0.5rem; width: 20px; height: 20px; }
 <script>
 document.getElementById('year').textContent = new Date().getFullYear();
 </script>
-
-</body>
-</
 
 </body>
 </html>
