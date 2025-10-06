@@ -1,150 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Faith Jensen — Astronomer</title>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-<style>
-/* -------- Reset -------- */
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Roboto', sans-serif; background: #0b0f2e; color: #e0e0e0; line-height: 1.6; }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faith Jensen | Astronomy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gradient-to-b from-slate-900 to-black text-white min-h-screen flex flex-col">
+    <!-- Navigation -->
+    <header class="p-6 flex justify-between items-center">
+      <h1 class="text-2xl font-semibold text-pink-300">Faith Jensen</h1>
+      <nav class="space-x-4 text-slate-200">
+        <a href="#about" class="hover:text-pink-300">About</a>
+        <a href="#research" class="hover:text-pink-300">Research</a>
+        <a href="#contact" class="hover:text-pink-300">Contact</a>
+      </nav>
+    </header>
 
-/* -------- Container -------- */
-.container { width: calc(100% - 2rem); max-width: 1100px; margin: 0 auto; padding: 2rem 0; }
+    <!-- Hero -->
+    <section class="text-center mt-20 px-4">
+      <h2 class="text-4xl font-bold text-pink-200 mb-4">Exploring Distant Worlds</h2>
+      <p class="text-slate-300 max-w-xl mx-auto">
+        I’m a researcher and science writer focused on exoplanets and stellar activity.
+        My work bridges astrophysics and data science to understand the dynamics of other worlds.
+      </p>
+    </section>
 
-/* -------- Header -------- */
-.site-header { text-align: center; padding: 2rem 0; }
-.site-title { font-size: 2.5rem; font-weight: 700; color: #c9a0dc; }
-.tagline { color: #a0a0a0; margin-top: 0.5rem; font-size: 1rem; }
-.site-nav { margin-top: 1rem; }
-.site-nav a { margin: 0 0.5rem; font-weight: 500; color: #ff6f3c; text-decoration: none; }
-.site-nav a:hover { color: #c9a0dc; }
+    <!-- About -->
+    <a href="about.html" class="block hover:opacity-90 transition-opacity duration-200">
+      <section id="about" class="mt-24 px-6 text-center">
+        <h3 class="text-2xl font-semibold text-pink-200 mb-2">About Me</h3>
+        <p class="max-w-2xl mx-auto text-slate-300">
+          I blend astronomy research with communication, making complex discoveries accessible
+          through writing, visualization, and open science projects.
+        </p>
+      </section>
+    </a>
 
-/* -------- Hero -------- */
-.hero { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding: 2rem 0; background: url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa') center/cover no-repeat; }
-.hero-inner { display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; background: rgba(0,0,0,0.4); padding: 2rem; border-radius: 12px; width: 100%; }
-.hero-text { flex: 1; min-width: 250px; }
-.hero-text h2 { font-weight: 500; color: #ff6f3c; font-size: 1.8rem; }
-.hero-text p { color: #a0a0a0; margin-top: 0.5rem; }
-.hero-photo img { width: 180px; height: 180px; border-radius: 50%; border: 2px solid #c9a0dc; object-fit: cover; }
+    <!-- Research -->
+    <a href="research.html" class="block hover:opacity-90 transition-opacity duration-200">
+      <section id="research" class="mt-24 px-6 text-center">
+        <h3 class="text-2xl font-semibold text-pink-200 mb-2">Research Highlights</h3>
+        <p class="max-w-2xl mx-auto text-slate-300 mt-4">
+          I analyze stellar activity effects on radial velocity signals. I model exoplanet detection biases using quasi-periodic Gaussian processes.
+        </p>
+      </section>
+    </a>
 
-/* -------- Panels -------- */
-.panel { padding: 2rem 0; text-align: center; }
-.panel.alt { background: rgba(255,255,255,0.07); border-radius: 12px; }
-h3 { font-weight: 500; font-size: 1.5rem; color: #c9a0dc; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; }
-h3 svg { margin-left: 0.5rem; width: 20px; height: 20px; }
+    <!-- Contact -->
+    <section id="contact" class="mt-24 mb-16 px-6 text-center">
+      <h3 class="text-2xl font-semibold text-pink-200 mb-2">Get in Touch</h3>
+      <p class="text-slate-300">
+        Contact me via <a href="mailto:faithcjensen@gmail.com" class="text-pink-300 underline hover:text-pink-200">email</a
+      </p>
+    </section>
 
-/* -------- Cards -------- */
-.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; justify-items: center; }
-.card { background: rgba(255,255,255,0.08); padding: 1rem; border-radius: 12px; transition: transform 0.2s, box-shadow 0.2s; width: 100%; }
-.card img { width: 100%; border-radius: 12px; margin-bottom: 0.5rem; }
-.card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
-
-/* -------- Post List -------- */
-.posts-list { list-style: none; padding-left: 0; }
-.posts-list li { margin: 0.6rem 0; }
-.posts-list a { color: #ff6f3c; text-decoration: none; }
-.posts-list a:hover { color: #c9a0dc; }
-
-/* -------- Footer -------- */
-.site-footer { padding: 1.5rem 0; text-align: center; color: #a0a0a0; font-size: 0.9rem; }
-
-/* -------- Responsive -------- */
-@media (max-width:900px) {
-  .hero-inner { flex-direction: column; }
-  .hero-photo img { width: 140px; height: 140px; }
-}
-</style>
-</head>
-<body>
-
-<header class="site-header">
-  <div class="container">
-    <h1 class="site-title">Faith Jensen</h1>
-    <p class="tagline">Curious about planets that aren't ours.</p>
-    <nav class="site-nav">
-      <a href="#about">About Me</a>
-      <a href="#research">Research</a>
-      <a href="#writing">Writing</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-  <section id="hero" class="hero">
-    <div class="container hero-inner">
-      <div class="hero-text">
-        <h2>Always looking up</h2>
-        <p>Research, writing, and astrophotography.</p>
-      </div>
-      <div class="hero-photo">
-        <img src="assets/profile.jpg" alt="Your portrait">
-      </div>
-    </div>
-  </section>
-
-  <section id="about" class="panel">
-    <div class="container">
-      <h3>About Me
-        <svg xmlns="http://www.w3.org/2000/svg" fill="#c9a0dc" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
-      </h3>
-      <p>Hello World! I’m Faith, an exoplanet and stellar activity researcher. I was born and raised in Montana :)</p>
-      <p><strong>Skills:</strong> add later</p>
-    </div>
-  </section>
-
-  <section id="research" class="panel alt">
-    <div class="container">
-      <h3>Research
-        <svg xmlns="http://www.w3.org/2000/svg" fill="#c9a0dc" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
-      </h3>
-      <div class="cards">
-        <article class="card">
-          <img src="assets/project2.jpg" alt="Exoplanet RV data">
-          <h4>Exoplanet Radial Velocity Analysis</h4>
-          <p>Simulated HARPS-N seasonal data with quasi-periodic GP fits to recover exoplanet signals.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="writing" class="panel">
-    <div class="container">
-      <h3>Poems About Living in the In-Between
-        <svg xmlns="http://www.w3.org/2000/svg" fill="#c9a0dc" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
-      </h3>
-      <ul class="posts-list">
-    <ul class="posts-list">
-      <li><a href="poems.html#while-the-stars-remain">While the Stars Remain</a></li>
-      <li><a href="poems.html#my-stellar-birthplace">My Stellar Birthplace</a></li>
-      <li><a href="poems.html#a-flicker-of-you">A Flicker of You</a></li>
-      <li><a href="poems.html#eulogy-in-stardust">Eulogy in Stardust</a></li>
-    </ul>
-  </div>
-</section>
-
-  <section id="contact" class="panel">
-    <div class="container">
-      <h3>Contact
-        <svg xmlns="http://www.w3.org/2000/svg" fill="#c9a0dc" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
-      </h3>
-      <p>Email: <a href="mailto:faithcjensen@gmail.com">faithcjensen@gmail.com</a></p>
-      <p>Links: <a href="https://github.com/faithcjensen">GitHub</a> · <a href="www.linkedin.com/in/faith-jensen">LinkedIn</a> · <a href="#">ORCID</a></p>
-    </div>
-  </section>
-</main>
-
-<footer class="site-footer">
-  <div class="container">
-    <p>© <span id="year"></span> Faith Jensen — Always looking up.</p>
-  </div>
-</footer>
-
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-</script>
-
-</body>
+    <footer class="text-center py-4 text-slate-400 text-sm border-t border-slate-700">
+      © 2025 Faith Jensen. All rights reserved.
+    </footer>
+  </body>
 </html>
