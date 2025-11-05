@@ -33,11 +33,101 @@
       </p>
     </section>
 
-<!-- Placeholder Images -->
-<section class="mt-12 flex justify-center gap-6 flex-wrap">
-<img src="volleyball.jpg" alt="Volleyball on the Oval!" class="rounded-xl shadow-lg w-full max-w-lg h-auto object-contain">
-  <img src="orionnebula.jpg" alt="The beautiful Orion Nebula" class="rounded-xl shadow-lg w-full max-w-lg h-auto object-contain">
+<!-- Undergrad Albums with Figure Captions -->
+<section class="mt-16 px-6 max-w-5xl mx-auto">
+  <h2 class="text-3xl font-bold text-pink-200 mb-6 text-center">Photo Albums</h2>
+
+  <!-- Album Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+    <!-- Outreach Album -->
+    <div class="border border-slate-700 rounded-lg overflow-hidden shadow-lg bg-slate-800 hover:scale-105 transition-transform duration-200">
+      <button class="w-full text-left px-4 py-3 flex justify-between items-center font-semibold text-pink-200 focus:outline-none"
+        onclick="toggleAlbum('album-outreach')">
+        Outreach
+        <span id="icon-album-outreach" class="transition-transform duration-200">+</span>
+      </button>
+      <div id="album-outreach" class="hidden px-4 py-3 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <figure class="rounded-lg overflow-hidden shadow-md hover:scale-105 hover:shadow-pink-400/50 transition duration-300">
+          <img src="photos/outreach1.jpg" alt="Outreach event 1" class="w-full h-auto">
+          <figcaption class="text-slate-300 text-sm mt-1 text-center">High school outreach event</figcaption>
+        </figure>
+        <figure class="rounded-lg overflow-hidden shadow-md hover:scale-105 hover:shadow-pink-400/50 transition duration-300">
+          <img src="photos/outreach2.jpg" alt="Outreach event 2" class="w-full h-auto">
+          <figcaption class="text-slate-300 text-sm mt-1 text-center">Teaching young students about astronomy</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- IPS 2024 Album -->
+    <div class="border border-slate-700 rounded-lg overflow-hidden shadow-lg bg-slate-800 hover:scale-105 transition-transform duration-200">
+      <button class="w-full text-left px-4 py-3 flex justify-between items-center font-semibold text-pink-200 focus:outline-none"
+        onclick="toggleAlbum('album-ips')">
+        IPS 2024
+        <span id="icon-album-ips" class="transition-transform duration-200">+</span>
+      </button>
+      <div id="album-ips" class="hidden px-4 py-3 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <figure class="rounded-lg overflow-hidden shadow-md hover:scale-105 hover:shadow-pink-400/50 transition duration-300">
+          <img src="photos/ips1.jpg" alt="IPS 2024 session" class="w-full h-auto">
+          <figcaption class="text-slate-300 text-sm mt-1 text-center">Presenting research at IPS 2024</figcaption>
+        </figure>
+        <figure class="rounded-lg overflow-hidden shadow-md hover:scale-105 hover:shadow-pink-400/50 transition duration-300">
+          <img src="photos/ips2.jpg" alt="IPS 2024 presentation" class="w-full h-auto">
+          <figcaption class="text-slate-300 text-sm mt-1 text-center">Poster session with fellow students</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- Volleyball Album -->
+    <div class="border border-slate-700 rounded-lg overflow-hidden shadow-lg bg-slate-800 hover:scale-105 transition-transform duration-200">
+      <button class="w-full text-left px-4 py-3 flex justify-between items-center font-semibold text-pink-200 focus:outline-none"
+        onclick="toggleAlbum('album-volleyball')">
+        Volleyball
+        <span id="icon-album-volleyball" class="transition-transform duration-200">+</span>
+      </button>
+      <div id="album-volleyball" class="hidden px-4 py-3 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <figure class="rounded-lg overflow-hidden shadow-md hover:scale-105 hover:shadow-pink-400/50 transition duration-300">
+          <img src="photos/volleyball1.jpg" alt="Volleyball match" class="w-full h-auto">
+          <figcaption class="text-slate-300 text-sm mt-1 text-center">Team match at the university gym</figcaption>
+        </figure>
+        <figure class="rounded-lg overflow-hidden shadow-md hover:scale-105 hover:shadow-pink-400/50 transition duration-300">
+          <img src="photos/volleyball2.jpg" alt="Team photo" class="w-full h-auto">
+          <figcaption class="text-slate-300 text-sm mt-1 text-center">Celebrating a tournament win</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- Fun Undergrad Memories Album -->
+    <div class="border border-slate-700 rounded-lg overflow-hidden shadow-lg bg-slate-800 hover:scale-105 transition-transform duration-200">
+      <button class="w-full text-left px-4 py-3 flex justify-between items-center font-semibold text-pink-200 focus:outline-none"
+        onclick="toggleAlbum('album-fun')">
+        Fun Undergrad Memories
+        <span id="icon-album-fun" class="transition-transform duration-200">+</span>
+      </button>
+      <div id="album-fun" class="hidden px-4 py-3 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <figure class="rounded-lg overflow-hidden shadow-md hover:scale-105 hover:shadow-pink-400/50 transition duration-300">
+          <img src="photos/fun1.jpg" alt="Campus fun" class="w-full h-auto">
+          <figcaption class="text-slate-300 text-sm mt-1 text-center">Enjoying campus events with friends</figcaption>
+        </figure>
+        <figure class="rounded-lg overflow-hidden shadow-md hover:scale-105 hover:shadow-pink-400/50 transition duration-300">
+          <img src="photos/fun2.jpg" alt="Friends gathering" class="w-full h-auto">
+          <figcaption class="text-slate-300 text-sm mt-1 text-center">Late-night study breaks and adventures</figcaption>
+        </figure>
+      </div>
+    </div>
+
+  </div>
 </section>
+
+<script>
+  function toggleAlbum(albumId) {
+    const album = document.getElementById(albumId);
+    const icon = document.getElementById('icon-' + albumId);
+    album.classList.toggle('hidden');
+    icon.textContent = album.classList.contains('hidden') ? '+' : '−';
+  }
+</script>
+
 
     <!-- Contact -->
     <section id="contact" class="mt-24 mb-16 px-6 text-center">
