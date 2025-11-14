@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Research in stellar activity and exoplanet radial-velocity methods by Faith Jensen." />
     <title>Research | Faith Jensen</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
+
   <body class="bg-gradient-to-b from-slate-900 to-black text-white min-h-screen flex flex-col">
 
     <!-- Navigation -->
@@ -15,44 +17,81 @@
         <a href="index.html" class="hover:text-pink-300">Home</a>
         <a href="about.html" class="hover:text-pink-300">About</a>
         <a href="research.html" class="hover:text-pink-300">Research</a>
-        <a href="Faith_Jensen_CV.pdf" target="_blank" class="hover:text-pink-300">CV</a>
+        <a href="Faith_Jensen_CV.pdf" target="_blank" rel="noopener noreferrer" class="hover:text-pink-300">CV</a>
       </nav>
     </header>
 
-    <!-- Research Content -->
-    <section class="mt-20 px-6 text-center">
-      <h2 class="text-4xl font-bold text-pink-200 mb-6">Research Highlights</h2>
-      <p class="max-w-3xl mx-auto text-slate-300 mb-4">
-        My research focuses on how variability in stars affects the detection of planets via radial velocity measurements.
-        Stellar active regions can mimic or obscure planetary signals, making it challenging to identify Earth-like exoplanets 
-        around Sun-like stars. My work aims to disentangle these effects to improve detection reliability.
+    <!-- Intro -->
+    <section class="mt-16 px-6 text-center max-w-3xl mx-auto">
+      <h2 class="text-4xl font-bold text-pink-200 mb-4">Research</h2>
+
+      <p class="text-slate-300">
+        Under the supervision of Dr. Chantanelle Nava, I research how stellar activity biases low-mass planet parameters. 
+        We utilized HARPS-N solar data to perform injection and recovery simulations to quantify the impact of seasonal 
+        stellar variability on the recovery of low-mass planet parameter estimates.
       </p>
     </section>
 
-<!-- Research Photos -->
-<section class="mt-12 flex flex-col md:flex-row justify-center gap-6 px-6">
-  <!-- First Photo -->
-  <figure class="max-w-sm rounded-lg overflow-hidden shadow-md hover:scale-105 hover:shadow-pink-400/50 transition duration-300">
-    <img src="sunspots.jpg" alt="seestar" class="w-full h-auto">
-    <figcaption class="text-slate-300 text-sm mt-1 text-center">
-      Sunspots taken on April 5th, 2025.
-    </figcaption>
-  </figure>
+    <!-- Research Photos -->
+    <section class="mt-12 px-6 grid gap-6 md:grid-cols-2 max-w-4xl mx-auto">
+      <figure class="rounded-lg overflow-hidden shadow-md hover:scale-105 hover:shadow-pink-400/50 transition duration-300">
+        <img src="sunspots.jpg" alt="High-resolution sunspot image taken April 5th, 2025" class="w-full h-auto">
+        <figcaption class="text-slate-300 text-sm mt-1 text-center">
+          Sunspots photographed on April 5th, 2025.
+        </figcaption>
+      </figure>
+     </section>
 
-  <!-- Second Photo -->
-  <figure class="max-w-sm rounded-lg overflow-hidden shadow-md hover:scale-105 hover:shadow-pink-400/50 transition duration-300">
-    <img src="activity.png" alt="activity" class="w-full h-auto">
-    <figcaption class="text-slate-300 text-sm mt-1 text-center">
-      Activity indicator periodograms for three years of HARPS-N solar data.
-    </figcaption>
-  </figure>
- </section>
+    <!-- Single Project -->
+    <section class="mt-20 px-6 max-w-4xl mx-auto">
+      <h3 class="text-3xl font-semibold text-pink-200 mb-6 text-center">Current Project</h3>
+
+      <article class="bg-slate-800/40 p-6 rounded-xl shadow-md">
+        <h4 class="text-xl font-bold text-pink-200 mb-2">
+          Injected-Planet Recovery in Seasonal HARPS-N Solar Data
+        </h4>
+
+        <p class="text-slate-300">
+          I analyze three years of HARPS-N solar radial-velocity observations, divided into seasonal datasets that 
+          reflect realistic observing gaps. Into each season, I inject a synthetic planet signal (K = 1.0 m/s, 
+          P = 80.0 days, e = 0) to evaluate how well different fitting strategies recover the injected planet 
+          parameters.
+        </p>
+
+        <p class="text-slate-300 mt-2">
+          <span class="font-semibold">Role:</span> generated RV injections, implemented quasi-periodic Gaussian process 
+          (QPGP) models to fit RV data, performed MCMC fitting, and compared parameter recovery across seasons.
+        </p>
+
+        <p class="text-slate-300 mt-2">
+          This work assesses how modeling the seasonal affects of stellar activity can improve
+          low-mass exoplanet parameter estimates. A manuscript is currently in prep.
+        </p>
+
+        <!-- Placeholder until you add GitHub -->
+        <a href="#" class="text-pink-300 hover:text-pink-200 underline mt-3 inline-block">
+          Code & figures (coming soon)
+        </a>
+      </article>
+    </section>
+
+    <!-- Skills -->
+    <section class="mt-16 px-6 max-w-4xl mx-auto text-center">
+      <h3 class="text-2xl font-semibold text-pink-200 mb-4">Skills & Tools</h3>
+      <p class="text-slate-300">
+        Python • NumPy • Astropy • Matplotlib • emcee • Jupyter • Git • LaTeX<br>
+        RV analysis • QPGP modeling • MCMC 
+      </p>
+    </section>
 
     <!-- Contact -->
-    <section id="contact" class="mt-24 mb-16 px-6 text-center">
+    <section id="contact" class="mt-20 mb-16 px-6 text-center">
       <h3 class="text-2xl font-semibold text-pink-200 mb-2">Get in Touch</h3>
       <p class="text-slate-300">
-        Contact me via <a href="mailto:faithcjensen@gmail.com" class="text-pink-300 underline hover:text-pink-200">email</a>
+        Contact me at 
+        <a href="mailto:faithcjensen@gmail.com" class="text-pink-300 underline hover:text-pink-200">
+          faithcjensen@gmail.com
+        </a>
       </p>
     </section>
 
